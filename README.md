@@ -1,5 +1,5 @@
 # Gmod Admin Commands
-Welcome to the Admin Commands Github for this [Workshop Item](https://steamcommunity.com/sharedfiles/filedetails/?id=1399718789)
+Welcome to the Admin Commands Github for this [Steam Workshop Item](https://steamcommunity.com/sharedfiles/filedetails/?id=1399718789)
 
 If you have any contributions you want to make, please create a pull request.
 It is important that the code you added has been tested before submitting a pull request. 
