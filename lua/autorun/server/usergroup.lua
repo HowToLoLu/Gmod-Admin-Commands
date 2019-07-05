@@ -10,7 +10,7 @@ local usergroup_con = {
 			if (not adminfunctions.nilargcheck(args, 2, {acerrs[1], acerrs[2]})) then return end				
 			
 			--Get target player
-			if(cmd~=admincommands.usergroupcon.name .. "byid") then
+			if(cmd~=admincommands.usergroup_con.name .. "byid") then
 				tarPly = adminfunctions.getplayerbyname(args[1])
 			else
 				tarPly = adminfunctions.getplayerbyid(args[1])

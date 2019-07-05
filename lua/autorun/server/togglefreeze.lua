@@ -5,7 +5,7 @@ local toggle_freeze_con = {
 		
 		if(not adminfunctions.nilargcheck(args, 1, {acerrs[1]})) then return end
 		
-		if(cmd~=admincommands.togglefreezecon.name .. "byid") then
+		if(cmd~=admincommands.toggle_freeze_con.name .. "byid") then
 			tarPly = adminfunctions.getplayerbyname(args[1])
 		else
 			tarPly = adminfunctions.getplayerbyid(args[1])

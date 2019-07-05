@@ -10,7 +10,7 @@ local slay_con = {
 			if (args[1] == nil) then print(acerrs[1]) return end
 							
 			--Get target player
-			if(cmd~=admincommands.slaycon.name .. "byid") then
+			if(cmd~=admincommands.slay_con.name .. "byid") then
 				tarPly = adminfunctions.getplayerbyname(args[1])
 			else
 				tarPly = adminfunctions.getplayerbyid(args[1])
