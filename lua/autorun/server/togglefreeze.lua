@@ -1,6 +1,6 @@
 --Create command
-local togglefreezecon = {
-	name = "togglefreeze",
+local toggle_freeze_con = {
+	name = "toggle_freeze",
 	fun = function ( ply, cmd, args)
 		
 		if(not adminfunctions.nilargcheck(args, 1, {acerrs[1]})) then return end
@@ -27,8 +27,8 @@ local togglefreezecon = {
 }
 
 --Add to the command list
-table.insert(admincommands, togglefreezecon)
+admincommands["toggle_freeze_con"] = toggle_freeze_con
 
 --Register Commands
-concommand.Add( admincommands.togglefreezecon.name, admincommands.togglefreezecon.fun, nil, nil, FCVAR_SERVER_CANNOT_QUERY)
-concommand.Add( admincommands.togglefreezecon.name .. "byid", admincommands.togglefreezecon.fun, nil, nil, FCVAR_SERVER_CANNOT_QUERY)
+concommand.Add( admincommands.toggle_freeze_con.name, admincommands.toggle_freeze_con.fun, nil, nil, FCVAR_SERVER_CANNOT_QUERY)
+concommand.Add( admincommands.toggle_freeze_con.name .. "byid", admincommands.toggle_freeze_con.fun, nil, nil, FCVAR_SERVER_CANNOT_QUERY)

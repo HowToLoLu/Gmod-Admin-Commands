@@ -1,5 +1,5 @@
 --Define usergroup command
-local usergroupcon = {
+local usergroup_con = {
 	name = "usergroup",
 	fun = function ( ply, cmd, args)
 		
@@ -34,8 +34,8 @@ local usergroupcon = {
 }
 
 --Insert command into list
-table.insert(admincommands, usergroupcon)
+admincommands["usergroup_con"] = usergroup_con
 
 --Register Commands
-concommand.Add( admincommands.usergroupcon.name, admincommands.usergroupcon.fun, nil, nil, FCVAR_SERVER_CANNOT_QUERY)
-concommand.Add( admincommands.usergroupcon.name .. "byid", admincommands.usergroupcon.fun, nil, nil, FCVAR_SERVER_CANNOT_QUERY)
+concommand.Add( admincommands.usergroup_con.name, admincommands.usergroup_con.fun, nil, nil, FCVAR_SERVER_CANNOT_QUERY)
+concommand.Add( admincommands.usergroup_con.name .. "byid", admincommands.usergroup_con.fun, nil, nil, FCVAR_SERVER_CANNOT_QUERY)

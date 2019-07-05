@@ -1,6 +1,6 @@
 --Create command
-local getPlayersCon = {
-	name = "getPlayers",
+local get_players_con = {
+	name = "get_players",
 	fun = function (ply, cmd, args)
 	
 		--Check if player is at least admin
@@ -29,7 +29,7 @@ local getPlayersCon = {
 }
 
 --Add it to the list
-table.insert(admincommands, getPlayersCon)
+admincommands["get_players_con"] = get_players_con
 
 --Register Command
-concommand.Add( admincommands.getPlayersCon.name, admincommands.getPlayersCon.fun, nil, nil, FCVAR_SERVER_CANNOT_QUERY)
+concommand.Add( admincommands.get_players_con.name, admincommands.get_players_con.fun, nil, nil, FCVAR_SERVER_CANNOT_QUERY)

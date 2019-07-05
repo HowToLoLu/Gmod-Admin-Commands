@@ -1,5 +1,5 @@
 --Define slay command
-local slaycon = {
+local slay_con = {
 	name = "slay",
 	fun = function ( ply, cmd, args)
 		
@@ -31,8 +31,8 @@ local slaycon = {
 }
 
 --Add to list
-table.insert(admincommands, slaycon)
+admincommands["slay_con"] = slay_con
 
 --Register Commands
-concommand.Add( admincommands.slaycon.name, admincommands.slaycon.fun, nil, nil, FCVAR_SERVER_CANNOT_QUERY )
-concommand.Add( admincommands.slaycon.name .. "byid", admincommands.slaycon.fun, nil, nil, FCVAR_SERVER_CANNOT_QUERY)
+concommand.Add( admincommands.slay_con.name, admincommands.slay_con.fun, nil, nil, FCVAR_SERVER_CANNOT_QUERY )
+concommand.Add( admincommands.slay_con.name .. "byid", admincommands.slay_con.fun, nil, nil, FCVAR_SERVER_CANNOT_QUERY)
